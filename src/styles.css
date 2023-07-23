@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .header {
     background-color: black;
     opacity: 0.85;
@@ -50,7 +51,7 @@ a {
     height: 600px;
     width: 600px;
     background-color: black;
-    opacity: 0.85;
+    opacity: 0.95;
     margin-top: 100px;
     align-self: center;
     display: flex;
@@ -61,14 +62,21 @@ a {
 }
 
 p {
-    margin: 20px 0px;
     color: white;
     font-size: 20px;
 }
 
-img {
-    height: 250px;
-    width: 250px;
+.chefImage {
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    z-index: 1;
+}
+
+.mapImage {
+    height: 400px;
+    width: 500px;
+}
+
+i {
+    margin-right: 12px;
 }

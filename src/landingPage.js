@@ -1,3 +1,4 @@
+import { handleClick } from "./index.js"
 
 export function headerSection() {
     const options = ["Home", "Menu", "Contact"]
@@ -14,8 +15,14 @@ export function headerSection() {
     for (let i = 0; i < 3; i++) {
         let listItem = document.createElement('li')
         let link = document.createElement('a')
+        if (i === 0) {
+            link.style.cssText = 'text-decoration: underline'
+        }
+        link.className = options[i]
+        console.log(link)
         link.setAttribute('href', "#")
         link.textContent = options[i];
+        link.addEventListener('click', handleClick)
         listItem.appendChild(link)
         unorderedList.appendChild(listItem)
     }
@@ -32,20 +39,23 @@ export function homeContent() {
 
     const p1 = document.createElement('p')
     p1.textContent = "Best Indian food in town"
+
     const p2 = document.createElement('p')
     p2.textContent = "Made with passion since 1920"
-    const img = document.createElement('img')
-    img.setAttribute('src', './chef.jpg')
+
+    const image = document.createElement('img')
+    image.setAttribute('src', './chef.jpg')
+    image.className = 'chefImage'
 
     const p3 = document.createElement('p')
     p3.textContent = "Order online or visit us"
 
     container.appendChild(p1)
     container.appendChild(p2)
-    container.appendChild(img)
+    container.appendChild(image)
     container.appendChild(p3)
 
     const mainDiv = document.querySelector('.content')
     mainDiv.appendChild(container)
- 
 }
+
