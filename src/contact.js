@@ -1,5 +1,5 @@
  export function displayContact() {
-    console.log("conatctttt")
+    
     const container = document.createElement('div')
     container.className = 'container'
 

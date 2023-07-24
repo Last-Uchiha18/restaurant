@@ -50,8 +50,7 @@ a {
 .container {
     height: 600px;
     width: 600px;
-    background-color: black;
-    opacity: 0.95;
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 100px;
     align-self: center;
     display: flex;
@@ -70,6 +69,7 @@ p {
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .mapImage {
@@ -79,4 +79,39 @@ p {
 
 i {
     margin-right: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+h2 {
+    color: white;
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 1);
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: -10px 30px;
+}
+
+.menuImg {
+    width: 100px;
+    height: 100px;;
+}
+
+.grid-item p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.grid-item:hover {
+    background-color: rgba(49, 47, 47, 0.8);
 }

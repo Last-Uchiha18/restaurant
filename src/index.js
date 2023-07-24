@@ -1,5 +1,6 @@
 import {headerSection, homeContent} from "./landingPage";
 import { displayContact } from "./contact";
+import { displayMenu } from "./menu";
 
 headerSection();
 homeContent();
@@ -21,8 +22,12 @@ export function handleClick(event) {
         let element = document.querySelector('.Home')
         element.style.cssText = 'text-decoration: underline'
     } else if (event.target.innerHTML === 'Contact') {
-        displayContact()
-        let element = document.querySelector('.Contact')
-        element.style.cssText = 'text-decoration: underline'
+        displayContact();
+        let element = document.querySelector('.Contact');
+        element.style.cssText = 'text-decoration: underline';
+    } else {
+        displayMenu();
+        let element = document.querySelector('.Menu');
+        element.style.cssText = 'text-decoration: underline';
     }
 }
